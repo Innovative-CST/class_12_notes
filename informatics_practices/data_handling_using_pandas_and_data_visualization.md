@@ -19,3 +19,11 @@ It is a high level data manipulation tool developed by [Wes McKinney](https://we
 
 **Note**: If you don't know how to install pandas you can search about it on YouTube because these steps may very according to the system.
 
+# Data structures in pandas
+A data structure is a way of storing and organizing data in a computer so that it can be accessed and operated on efficiently.
+
+Pandas provides and deals with the three data structures:
+
+- **Series**: It is a one-dimensional structure of storing homogeneous (same data type), mutable data.
+- **Data Frame**: It is a two-dimensional structure of storing heterogeneous (multiple data types), mutable data.
+- **Panel**: it is a three dimensional way of storing data. 
