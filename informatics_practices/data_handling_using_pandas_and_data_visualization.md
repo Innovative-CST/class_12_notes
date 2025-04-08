@@ -246,3 +246,86 @@ b    2
 c    3
 Name: Test, dtype: int64
 ```
+
+### Accessing data/Elements from a Series
+
+#### Indexing operator `[]`
+
+- By Position
+
+Syntax:
+```python
+<Series Object>[<valid index>]
+```
+
+Example:
+
+```python
+import pandas
+series = pandas.Series([10, 20, 30, 40], ['a', 'b', 'c', 'd'])
+series[0]  # returns 10  
+series[1]  # returns 20
+```
+
+- By Label
+
+Syntax:
+```python
+<Series Object>[<labelled index>]
+```
+Example Code:
+```python
+import pandas
+series = pandas.Series([10, 20, 30, 40], ['a', 'b', 'c', 'd'])
+series['a']  # returns 10  
+series['b']  # returns 20
+```
+
+#### iloc function
+
+iloc function is used for indexing or selection based on position, that is we have to specify int index for selection by position.
+
+Example Code:
+```python
+import pandas
+series = pandas.Series([10, 20, 30, 40], ['a', 'b', 'c', 'd'])
+print(series.iloc[0])        # prints 10  
+print(series.iloc[1:3])      
+# Output:
+# b    20  
+# c    30  
+# dtype: int64
+
+print(series.iloc[[0, 2]])   
+# Output:
+# a    10  
+# c    30  
+# dtype: int64
+
+# print(series.iloc[1,3])      --> error
+```
+
+#### loc function
+
+loc is used for indexing or selection, based on name.
+
+Example Code:
+```python
+import pandas
+series = pandas.Series([10, 20, 30, 40], ['a', 'b', 'c', 'd'])
+print(series.loc['a'])             # 10  
+print(series.loc[['a','c']])       
+# Output:
+# a    10  
+# c    30  
+# dtype: int64
+
+print(series.loc['a':'c'])         
+# Output:
+# a    1  
+# b    2  
+# c    3  
+# dtype: int64
+
+# print(series.loc['a', 'c']) --> Error
+```
