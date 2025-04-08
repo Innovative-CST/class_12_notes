@@ -217,3 +217,11 @@ Output:
 2    10.0
 dtype: float64
 ```
+
+### Naming a Series
+We can also give a name to a entire series using name property.
+
+Syntax:
+```python
+<Series object>.name = <Series name>
+```
