@@ -139,3 +139,18 @@ dtype: float64
 ```
 
 **Note**: NaN → Not a number
+
+#### Creating a series using scaler or constant values 
+```python
+import pandas as pd
+students = ["Ankur", "Karan", "Jay"]
+sr = pd.Series("Good Day", index=students)
+print(sr)
+```
+Output:
+```output
+Ankur    Good Day
+Karan    Good Day
+Jay      Good Day
+dtype: object
+```
