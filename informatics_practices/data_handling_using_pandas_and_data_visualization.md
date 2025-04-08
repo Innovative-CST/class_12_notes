@@ -75,7 +75,7 @@ print(sr)
 Output:
 ```output
 Aman     85  
-Madhu   90  
+Madhu    90  
 Sahil    95  
 dtype: int64
 ```
