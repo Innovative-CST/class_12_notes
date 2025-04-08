@@ -54,3 +54,11 @@ Output:
 ```cmd
 Series([], dtype: float64)
 ```
+
+#### Creating Series with Arguments
+
+Syntax:
+```cmd
+pandas.Series(<data>, <index>)  
+pandas.Series(data = <data>, index = <index>)
+```
