@@ -225,3 +225,24 @@ Syntax:
 ```python
 <Series object>.name = <Series name>
 ```
+Example Code:
+```python
+import pandas
+
+sr = pandas.Series([1, 2, 3], ["a", "b", "c"])
+print(sr)
+
+sr.name = "Test"
+print(sr)
+```
+Output:
+```output
+a    1
+b    2
+c    3
+dtype: int64
+a    1
+b    2
+c    3
+Name: Test, dtype: int64
+```
