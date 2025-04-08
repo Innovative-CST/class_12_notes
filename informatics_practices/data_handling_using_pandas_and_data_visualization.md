@@ -79,3 +79,44 @@ Madhu    90
 Sahil    95  
 dtype: int64
 ```
+
+#### Creating series using range method and for-loop
+
+Example Code:
+
+```python
+import pandas
+days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+index = [x for x in range(1, 8)]
+series = pandas.Series(days, index)
+print(series)
+```
+Output:
+```output
+1       Sunday
+2       Monday
+3      Tuesday
+4    Wednesday
+5     Thursday
+6       Friday
+7     Saturday
+dtype: object
+```
+Example Code:
+```python
+import pandas
+days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+series = pandas.Series(days)
+print(series)
+```
+Output:
+```output
+0       Sunday
+1       Monday
+2      Tuesday
+3    Wednesday
+4     Thursday
+5       Friday
+6     Saturday
+dtype: object
+```
