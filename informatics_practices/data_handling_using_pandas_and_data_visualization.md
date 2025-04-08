@@ -62,3 +62,20 @@ Syntax:
 pandas.Series(<data>, <index>)  
 pandas.Series(data = <data>, index = <index>)
 ```
+
+#### Create a series using 2 different lists
+
+```python
+import pandas as pd
+names = ["Aman", "Madhu", "Sahil"]
+scores = [85, 90, 95]
+sr = pandas.Series(scores, names)
+print(sr)
+```
+Output:
+```output
+Aman     85  
+Madhu   90  
+Sahil    95  
+dtype: int64
+```
