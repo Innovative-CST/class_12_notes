@@ -14,3 +14,8 @@ It is a high level data manipulation tool developed by [Wes McKinney](https://we
 - It has functionality to find and fill missing data.
 - It allows us to apply operation to independent groups within the data.
 - It supports recheping of data into different forms.
+
+**Note**: Installing process may differ due to operating system. So please install the python according to your operating system or you can visit [Beginners Guide for installing python](https://wiki.python.org/moin/BeginnersGuide/Download)
+
+**Note**: If you don't know how to install pandas you can search about it on YouTube because these steps may very according to the system.
+
