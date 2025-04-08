@@ -197,3 +197,23 @@ Output:
 28    14
 dtype: int32
 ```
+
+#### Creating a Series using numpy ndarray
+Example Code:
+```python
+import pandas
+import numpy
+
+s1 = numpy.arange(3, 13, 3.5)
+print(s1)
+sr = pandas.Series(s1)
+print(sr)
+```
+Output:
+```output
+[ 3.   6.5 10. ]
+0     3.0
+1     6.5
+2    10.0
+dtype: float64
+```
