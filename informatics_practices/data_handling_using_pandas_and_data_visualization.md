@@ -37,3 +37,20 @@ The data applied to Series method can be anyone of the following types:
 - A dictionary
 - A mathematical data
 - Numpy & ndarray
+
+### Creating Series object
+#### Creating Empty Series
+
+A basic series which can be created is empty series.
+This is created just by calling Series method with no parameters.
+
+
+```python
+import pandas
+sr = pandas.Series()
+```
+
+Output:
+```cmd
+Series([], dtype: float64)
+```
