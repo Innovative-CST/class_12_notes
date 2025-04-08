@@ -27,3 +27,13 @@ Pandas provides and deals with the three data structures:
 - **Series**: It is a one-dimensional structure of storing homogeneous (same data type), mutable data.
 - **Data Frame**: It is a two-dimensional structure of storing heterogeneous (multiple data types), mutable data.
 - **Panel**: it is a three dimensional way of storing data. 
+
+## Series
+Series in pandas is like a one-dimensional structure capable of holding homogeneous data of any type like string, int, float, Python objects.
+The data applied to Series method can be anyone of the following types:
+
+- Sequence
+- Scalar
+- A dictionary
+- A mathematical data
+- Numpy & ndarray
