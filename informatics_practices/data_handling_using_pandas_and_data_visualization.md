@@ -120,3 +120,22 @@ Output:
 6     Saturday
 dtype: object
 ```
+
+#### Creating a series using missing value
+Example Code:
+```python
+import numpy
+import pandas
+series = pandas.Series([1,2,3,numpy.nan])
+print(series)
+```
+Output:
+```output
+0    1.0
+1    2.0
+2    3.0
+3    NaN
+dtype: float64
+```
+
+**Note**: NaN → Not a number
