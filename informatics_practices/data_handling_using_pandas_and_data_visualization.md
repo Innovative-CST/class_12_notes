@@ -177,3 +177,23 @@ March       31
 dtype: int64
 ```
 **Note**: Order may vary in dictionary.
+
+#### Creating a Series using mathematical expression
+Example Code:
+```python
+import pandas
+import numpy
+
+s1 = numpy.arange(10, 15, 1)
+sr = pandas.Series(s1, s1 * 2)
+print(sr)
+```
+Output:
+```output
+20    10
+22    11
+24    12
+26    13
+28    14
+dtype: int32
+```
