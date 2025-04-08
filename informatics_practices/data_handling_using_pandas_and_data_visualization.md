@@ -140,7 +140,8 @@ dtype: float64
 
 **Note**: NaN → Not a number
 
-#### Creating a series using scaler or constant values 
+#### Creating a series using scaler or constant values
+Example Code:
 ```python
 import pandas as pd
 students = ["Ankur", "Karan", "Jay"]
@@ -154,3 +155,25 @@ Karan    Good Day
 Jay      Good Day
 dtype: object
 ```
+
+#### Creating a Series from dictionary
+Example Code:
+```python
+import pandas
+
+months = {
+    "January" : 31,
+    "February" : 28,
+    "March" : 31
+}
+sr = pandas.Series(months)
+print(sr)
+```
+Output:
+```output
+January     31
+February    28
+March       31
+dtype: int64
+```
+**Note**: Order may vary in dictionary.
